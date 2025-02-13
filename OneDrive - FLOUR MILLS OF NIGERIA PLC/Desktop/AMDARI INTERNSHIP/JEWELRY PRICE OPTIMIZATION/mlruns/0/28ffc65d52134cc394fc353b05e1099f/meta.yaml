@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/gideonokomayin/OneDrive%20-%20FLOUR%20MILLS%20OF%20NIGERIA%20PLC/Desktop/AMDARI%20INTERNSHIP/JEWELRY%20PRICE%20OPTIMIZATION/mlruns/0/28ffc65d52134cc394fc353b05e1099f/artifacts
+end_time: 1739441666070
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 28ffc65d52134cc394fc353b05e1099f
+run_name: AdaBoost
+run_uuid: 28ffc65d52134cc394fc353b05e1099f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739441665995
+status: 3
+tags: []
+user_id: GIDEONOKOMAYIN

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/gideonokomayin/OneDrive%20-%20FLOUR%20MILLS%20OF%20NIGERIA%20PLC/Desktop/AMDARI%20INTERNSHIP/JEWELRY%20PRICE%20OPTIMIZATION/mlruns/0/830c77fca7de4af9b8abea6fe381ffc2/artifacts
+end_time: 1739441665885
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 830c77fca7de4af9b8abea6fe381ffc2
+run_name: CatBoost
+run_uuid: 830c77fca7de4af9b8abea6fe381ffc2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739441665795
+status: 3
+tags: []
+user_id: GIDEONOKOMAYIN

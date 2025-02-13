@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/gideonokomayin/OneDrive%20-%20FLOUR%20MILLS%20OF%20NIGERIA%20PLC/Desktop/AMDARI%20INTERNSHIP/JEWELRY%20PRICE%20OPTIMIZATION/mlruns/0/84de82157b3f4fe4a72f1b8429ad02a7/artifacts
+end_time: 1739315954991
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 84de82157b3f4fe4a72f1b8429ad02a7
+run_name: LinearRegression
+run_uuid: 84de82157b3f4fe4a72f1b8429ad02a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739315954877
+status: 3
+tags: []
+user_id: GIDEONOKOMAYIN
