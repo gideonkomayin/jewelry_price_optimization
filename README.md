@@ -1,83 +1,109 @@
-## Specialization
-Predictive Analytics, Customer Analytics, Recommender System and Unsupervised Machine Learning.
+## Business Overview/Problem
+# Business Problem I
+Having recently expanded operations, Gemineye Emporium has grown from a relatively small jewelry provider to a large-scale jewelry designing and trading company. Although this is good news, this transition is a very fast one, and while it has gone well all things considered, there were some edge cases the company board did not see coming. One glaring instance is the product prices. This is actually the major pain point for the company at the moment.
 
-# Project Title
-Cohort Analysis For Assessing Customer Retention In E-commerce Industry - A Data Science Project
+# Business Problem II
 
-## Business Introduction
-Company: E-Shop Pro
+In the days where Gemineye was a small-scale holding, the price of any jewelry piece was very easy to determine or, in rare cases of confusion, ascertain. Now that operations have expanded exponentially, Gemineye finds itself not only importing pieces, but also manufacturing them in-house. With logistics concerns thrown into the mix, this becomes a more complicated system, and all these factors have two effects:
 
-Industry: E-Commerce
+A. Complicate the price determination process, and
+B. Inflate prices.
+ 
 
-E-Shop Pro is a leading online retailer offering a wide range of products, including electronics, apparel, and home goods. With millions of customers globally, the business prides itself on its fast delivery, customer-centric policies, and personalized shopping experience. Some major achievements highlighted by the company include:
+# Business Problem III
 
-* Growth in user base by 30% annually over the last five years.
-* Implementation of a personalized recommendation system, improving customer satisfaction.
-* Achieved 80% retention rate among VIP customers in the first two years of loyalty program implementation.
+Gemineye is in need of a means by which they can:
 
-Despite its numerous successes, the company has encountered a formidable challenge that has left its leadership team determined to find a solution: an alarmingly high shopping cart abandonment rate.
+A. Make the most profit from their investment, and
+B. Remain competitive by keeping their prices as affordable as possible.
+ 
 
+In essence, they are in need of a way to maximize price to fill their pockets while minimizing it to suit the customers’ pockets. This is a tricky kettle of fish to boil!
 
-## Business Problem 
-The company is facing a significant challenge in retaining customers over time. While the company experiences high customer acquisition rates, they are seeing a drop-off in returning customers after the first purchase. Specific challenges include:
+ 
 
-* Declining repeat purchase rate: New customers are not returning after their initial purchase.
-* Customer churn: A noticeable percentage of customers leave after a brief period of activity, increasing marketing and acquisition costs.
-* Low engagement: Customers show decreased interaction with the platform after their first few visits, indicating a failure to maintain long-term interest.
+Enter you, our intrepid data scientist. You have come up with the brilliant idea to leverage artificial intelligence (AI) for this task, which you have shared with the administrative team.
 
-Resolving these issues is critical for improving customer lifetime value (CLV) and overall business growth.
+# Business Problem IV
 
-## Rationale for cohort analysis
-Cohort Analysis is the most effective tool to assess customer retention by dividing customers into groups (cohorts) based on shared characteristics or behaviors over a specific period. By tracking cohorts over time, companies can identify:
+To be more specific, the specific challenges of interest are:
 
-* Customer retention rates over different time frames (e.g., weekly, monthly).
-* Patterns of churn and identify when customers are most likely to stop engaging.
-* Effectiveness of retention strategies such as loyalty programs or promotions.
-* Customer segmentation to tailor retention strategies based on behavior.
-* Optimization opportunities for the onboarding process and post-purchase engagement.
-  
-This project will help the company in  identifying trends in customer retention and take proactive steps to improve long-term loyalty.
+A. Market Dynamics: The jewelry market is influenced by trends, fashion, and changing consumer preferences, making pricing decisions complex.
+ 
+B. Competitive Pricing: Setting prices that are competitive with other jewelry retailers while offering unique and high-quality pieces.
+ 
+C. Cost Management: Balancing the cost of materials, craftsmanship, and overhead expenses with market pricing is crucial for profitability.
 
-## Aim of Project
-The aim of the project is to conduct a retention rate time-based cohort analysis on the dataset.
-* Retention Rate Analysis: 
-To calculate and analyze the retention rates of different customer cohorts over time.
-* Cohort Segmentation: 
-To segment customers into distinct cohorts based on common characteristics or behaviors, such as acquisition date or first purchase date, enabling a more granular analysis of customer retention.
-* Identify Retention Trends: 
-To identify trends and patterns in customer retention within each cohort.
-* Churn Analysis: 
-To pinpoint the reasons and timing of customer churn within various cohorts.And build a predictive model that can be used to predict churn behavior
-* Recommendation Strategies: 
-To develop data-driven strategies and recommendations for improving customer retention based on the insights gained from the cohort analysis.
+## Rationale for the Project
 
+More rationale for jewelry price optimization can be seen as follows:
+
+A. Profitability: Maximizing profits by balancing prices with costs and market demand
+ 
+B. Customer Satisfaction: Offering competitive prices for high-quality jewelry enhances customer satisfaction.
+ 
+C. Adaptability: The ability to adjust prices dynamically in response to market changes and trends.
+
+## Aim of the Project
+The aims of the project are:
+
+A. Develop Price Optimization Models: Create machine learning models to predict optimal prices for different jewelry pieces based on market data and costs.
+ 
+B. Feature Selection (and Engineering): Identify (and engineer) relevant features that contribute to load capacity prediction accuracy.
+ 
+C. Ensure explainable predictions: Ensure that the developed price prediction models are explainable and can give insights to the business analysts as regards. This will help the business administration trust the model predictions even more.
+ 
 ## Data Description
-The dataset required for this project will include:
-* InvoiceNo: A unique identifier for each invoice or transaction, often used for tracking and reference purposes.
-* StockCode: A code or identifier associated with a specific product or item in the e-commerce store's inventory, used for cataloging and tracking purposes.
-* Description: A categorical feature that provides a brief textual description of the product or item being sold, offering clarity to customers about what they are purchasing.
-* Quantity: The quantity or number of units of a product that were included in the transaction, indicating the purchase volume for each item.
-* InvoiceDate: The date and time when the transaction or invoice was generated, offering insights into when purchases were made and allowing for temporal analysis.
-* UnitPrice: Indicating the total cost of the items purchased.
-* CustomerID: A unique identifier associated with each customer or shopper, allowing for customer-specific analysis and tracking of individual purchasing behavior.
-* Country: The name of the country where the customer is located or where the transaction occurred.
 
+# Data Description I:
+You have carte blanche to request whatever data you require. Based on your wealth of experience, you know you require:
+✓ Jewelry Data: Detailed information about each jewelry piece, including gemstone type, metal type, weight, and craftsmanship details.
+✓ Market Data: Historical market data, including jewelry market trends, competitor prices, and consumer preferences, and time of sales.
 
-## Methodology
-* Ingest Data: Ingest the data and perform data cleaning.
-* Exploratory Data Analysis: the data was thoroughly explored and analysed to gain insights and understand its characteristics. This involves statistical analysis, data visualization, and other exploratory techniques to identify patterns, correlations, anomalies, and potential issues in the data.
-* Feature Engineering: Feature engineering is the process of creating or selecting relevant features (input variables) from the available data that will be used for modeling. It may involve feature extraction, transformation, scaling, or the creation of new features to improve the predictive power of the models.
-* Model Development: Various modeling techniques are applied to the prepared data in this stage to build predictive or descriptive models. This can include machine learning algorithms, statistical models, or other analytical approaches. The models are trained, validated, and fine-tuned to optimize their performance.
-* Model Evaluation and Selection: Once the models are developed, they are evaluated using appropriate evaluation metrics and validation techniques. This involves assessing their performance, generalizability, and robustness. The best-performing model(s) are selected for further deployment or refinement.
-* Reporting and Strategy Recommendations: Generate a good report and develop strategies and recommendations to curtail churn rate. 
+ 
+# Data Description II
+The features contained in the dataset are:
+✓ Order datetime (The time at which the order was placed)
+✓ Order ID (Identifiers for the different orders placed)
+✓ Purchased product ID (Identifiers for the different product ordered for)
+✓ Quantity of SKU in the order (Quantity of jewelry pieces ordered for)
+✓ Category ID (Identifier for the jewelry category)
+✓ Category alias (Name of jewelry category e.g. earring)
+✓ Brand ID (Identifier for jeweler brand)
+✓ Price in USD (Jewelry price in US Dollars)
+✓ User ID (Identifier for user/customer)
+✓ Product gender (for male/female) (Target gender for jewelry piece)
+✓ Main Color (Overall color of jewelry piece)
+✓ Main metal (Main metal used for mounting)
+✓ Main gem (Main gem mounted on jewelry piece)
 
 ## Tech Stack
-1. Programming language – Python
-2. Jupyter Notebook: Platform for executing and documenting code.
+The programming language of use, as in most of ML, is Python.
 
-Libraries:
-- Numpy: For performing mathematical operations over data
-- Pandas: For Data Analysis and Manipulation
+The Python libraries of interest for this project are:
+
+A. NumPy: Numerical computation 
+B. Pandas: Data munging and manipulation
+C. Matplotlib and Seaborn: Data Visualization
+D. Sci-kit Learn: Machine Learning
+E. RAPIDS (CuML): CUDA-accelerated Machine Learning
+
+## Project Scope
+A. Exploratory Data Analysis
+
+The data is thoroughly explored and analysed to gain insights and understand its characteristics. This involves statistical analysis, data visualization, and other exploratory techniques to identify patterns, correlations, anomalies, and potential issues in the data.
+
+B. Feature Selection (and Engineering)
+
+Not all features provided in data may be of relevance to the target. Feature selection is the process by which we can select the most appropriate of these according to a specified set of criteria. The data features might also be composable to give more informative features.
+
+C. Model Development
+
+Various modelling techniques are applied to the prepared data in this stage to build predictive or descriptive models. This can include machine learning algorithms, statistical models, or other analytical approaches. The models are trained, validated, and fine-tuned to optimize their performance.
+
+D. Model Evaluation, Selection and Explanation
+
+Once the models are developed, they are evaluated using appropriate evaluation metrics and validation techniques. This involves assessing their performance, generalizability, and robustness. The best-performing model(s) are selected for further deployment or refinement, and attempts to explain why they work and what they learn are made.
 - Matplotlib.pyplot: For Data Visualization
 - Seaborn: For Data Visualization
 - Scikit-learn: For Machine Learning
